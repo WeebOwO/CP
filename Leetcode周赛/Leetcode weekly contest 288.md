@@ -1,4 +1,4 @@
-##1.[按奇偶性交换后的最大数字](https://leetcode-cn.com/problems/largest-number-after-digit-swaps-by-parity/)
+## 1.[按奇偶性交换后的最大数字](https://leetcode-cn.com/problems/largest-number-after-digit-swaps-by-parity/)
 **解题思路**:贪心，当碰到奇数时，往后找找有没有比它还大的奇数，碰到偶数是同理，往后找找有没有比他大的偶数。
 
 Code:
@@ -39,7 +39,7 @@ public:
 };
 ```
 
-##2.[向表达式添加括号后的最小结果](https://leetcode-cn.com/problems/minimize-result-by-adding-parentheses-to-expression/)
+## 2.[向表达式添加括号后的最小结果](https://leetcode-cn.com/problems/minimize-result-by-adding-parentheses-to-expression/)
 **解题思路**：题目已经提到，我们的字符串的序列中只有一个+号，那么我们可以现进行一次遍历来找到+号的位置，然后枚举左括号和右括号的位置。这道题用c++有点难写，在比赛中我写了大概15min才通过，推荐用python来写，不过我这里还是放出我写的c++代码。
 
 Code:
@@ -86,7 +86,7 @@ public:
 
 ```
 
-##3.[K 次增加后的最大乘积](https://leetcode-cn.com/problems/maximum-product-after-k-increments/)
+## 3.[K 次增加后的最大乘积](https://leetcode-cn.com/problems/maximum-product-after-k-increments/)
 **解题思路**:数据范围10^5，直接用优先队列维护最小值即可。(个人感觉比第二题好写多了)。
 
 Code:
@@ -115,7 +115,7 @@ public:
 };
 ```
 
-##4.[花园的最大总美丽值](https://leetcode-cn.com/problems/maximum-total-beauty-of-the-gardens/)
+## 4.[花园的最大总美丽值](https://leetcode-cn.com/problems/maximum-total-beauty-of-the-gardens/)
 **解题思路**:通过枚举完善花园的数量，并且二分不完善花园中可能最小值的最大值即可,虽然说起来很简单，但是比赛的时候我并没有写出来(欸嘿). 代码是来自[TsReaper](https://leetcode-cn.com/u/tsreaper/)，该去给大佬点赞了。
 Code:
 ```cpp
