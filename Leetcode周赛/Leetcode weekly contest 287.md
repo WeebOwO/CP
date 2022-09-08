@@ -1,5 +1,5 @@
-#Leetcode weekly conetest 287
-##1.[转化时间需要的最小操作数](https://leetcode-cn.com/problems/minimum-number-of-operations-to-convert-time/)
+# Leetcode weekly conetest 287
+## 1.[转化时间需要的最小操作数](https://leetcode-cn.com/problems/minimum-number-of-operations-to-convert-time/)
 题目大意: 给出两个时间current和correct(current < correct), 你可以将current时间增加1, 5, 15, 60分钟, 问将current转化为correct的最小步骤
 
 解法: 本质上是一个贪心过程，我们尽可能的去将current时间减去当前可拨动的最大分钟数, 便可以达到最优解。
@@ -40,7 +40,7 @@ public:
 };
 ```
 
-##2.[找出输掉零场或一场比赛的玩家](https://leetcode-cn.com/problems/find-players-with-zero-or-one-losses/)
+## 2.[找出输掉零场或一场比赛的玩家](https://leetcode-cn.com/problems/find-players-with-zero-or-one-losses/)
 题目大意：找出比赛过的人里面，只输过一场的人或者没有输过的人，并将其按照参赛人员序号有序返回。
 
 解法：利用有序容器(Ordered-set)来记录参赛选手，同时通过哈希表记录每名选手的胜利和失败场次，之后我们便可以遍历有序容器，按照题意进行处理即可。
@@ -80,7 +80,7 @@ public:
 };
 ```
 
-##3.[每个小孩最多能分到多少糖果](https://leetcode-cn.com/problems/maximum-candies-allocated-to-k-children/)
+## 3.[每个小孩最多能分到多少糖果](https://leetcode-cn.com/problems/maximum-candies-allocated-to-k-children/)
 
 题目大意: 给出一堆糖果，我们将其中的任意一堆拆分，在经过若干次这样的拆分之后，我们便可以将已经分好的糖果堆发给指定数量的孩子们, 然而处于某种考量，我们必须要让每个孩子都分配到相同数量的糖果，问每个小孩可以拿到的糖果数量最大是多少。
 
@@ -125,7 +125,7 @@ public:
 };
 ```
 
-##4.[加密解密字符串](https://leetcode-cn.com/problems/encrypt-and-decrypt-strings/)
+## 4.[加密解密字符串](https://leetcode-cn.com/problems/encrypt-and-decrypt-strings/)
 题目大意：虽然原题目描述有些考验我们的语文水平，但是加密过程实际上真的只是让我们对字符串(key)中的字符来根据value进行字符串替换，而解密则是这一过程的逆过程。
 
 解法: 在比赛中，我的回溯代码被无情的TLE了，之后通过[灵茶山艾府](https://leetcode-cn.com/u/endlesscheng/)大佬的题解领悟到十分优雅的思路，即在解密过程中逆向思考，不是去考虑当前字符串解密过来之后是什么样，而是考虑原字典所有字符串加密的时候的所有可能，并将其通过哈希表记录下来.
