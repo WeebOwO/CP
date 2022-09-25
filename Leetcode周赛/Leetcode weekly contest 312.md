@@ -1,6 +1,7 @@
 # Leetcode weekly conetest 312
 ## 1.[按身高排序](https://leetcode.cn/problems/sort-the-people/)
 **解法**: 直接利用STL中的sort来自定义排序规则即可。
+
 **Tag**: 自定义排序
 
 **Code**:
@@ -28,6 +29,7 @@ public:
 
 ## 2.[按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/)
 **解法**：这道题最重要的一个观察点就是，a & b < min(a, b), 也就是说任何数与其他数进行按位与操作，其值绝不会变大，因此这道题的最终答案就是最大数字的最长连续出现次数。
+
 **Tag**: 脑筋急转弯， 位运算
 
 **Code**:
