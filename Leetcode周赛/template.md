@@ -1,4 +1,4 @@
-# Leetcode weekly conetest 287
+# Leetcode weekly conetest
 ## 1.[]()
 **解法**: 
 **Tag**: 
