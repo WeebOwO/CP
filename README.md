@@ -1,1 +1,1 @@
-Recore some algorithm problems in online contest
+Record some algorithm problems in online contest
