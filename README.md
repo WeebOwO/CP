@@ -1,1 +1,1 @@
-主要用来记录下自己的算法学习
+Recore some algorithm problems in online contest
